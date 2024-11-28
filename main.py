@@ -58,7 +58,7 @@ def init_screen(stdscr):
     while True:
         stdscr.clear()
         height, width = stdscr.getmaxyx()
-        stdscr.addstr(0, 0, "Use arrow keys to navigate. Press 'Enter' to edit, 'Space' to toggle task completion, '/' to add a new task, and 'Delete' to delete.")
+        stdscr.addstr(0, 0, "Use arrow keys to navigate. 'Space' to toggle task completion, '/' to add a new task, and 'Delete' to delete.")
         if new_task_mode:
             stdscr.addstr(1, 0, "Enter new task: ")
             stdscr.addstr(1, len("Enter new task: "), new_task_name, curses.A_REVERSE)
